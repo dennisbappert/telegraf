@@ -1,0 +1,48 @@
+{
+	"ImportPath": "github.com/dennisbappert/telegraf",
+	"GoVersion": "go1.6",
+	"Packages": [
+		"github.com/dennisbappert/telegraf/cmd/telegraf"
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/influxdata/config",
+			"Rev": "dbabd867deecbcd69a969d4ba5eebe5110a2fe4d"
+		},
+		{
+			"ImportPath": "github.com/influxdata/influxdb/client/v2",
+			"Comment": "v0.10.0-207-g8e10099",
+			"Rev": "8e100998fab81a70f8b8fa8fbb41e1ed8cafa6f5"
+		},
+		{
+			"ImportPath": "github.com/influxdata/influxdb/models",
+			"Comment": "v0.10.0-207-g8e10099",
+			"Rev": "8e100998fab81a70f8b8fa8fbb41e1ed8cafa6f5"
+		},
+		{
+			"ImportPath": "github.com/influxdata/influxdb/pkg/escape",
+			"Comment": "v0.10.0-207-g8e10099",
+			"Rev": "8e100998fab81a70f8b8fa8fbb41e1ed8cafa6f5"
+		},
+		{
+			"ImportPath": "github.com/lxn/win",
+			"Rev": "9a7734ea4db26bc593d52f6a8a957afdad39c5c1"
+		},
+		{
+			"ImportPath": "github.com/naoina/go-stringutil",
+			"Rev": "6b638e95a32d0c1131db0e7fe83775cbea4a0d0b"
+		},
+		{
+			"ImportPath": "github.com/naoina/toml",
+			"Rev": "751171607256bb66e64c9f0220c00662420c38e9"
+		},
+		{
+			"ImportPath": "github.com/zensqlmonitor/go-mssqldb",
+			"Rev": "ffe5510c6fa5e15e6d983210ab501c815b56b363"
+		},
+		{
+			"ImportPath": "golang.org/x/crypto/md4",
+			"Rev": "1f22c0103821b9390939b6776727195525381532"
+		}
+	]
+}
