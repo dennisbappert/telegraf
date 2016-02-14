@@ -11,9 +11,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/influxdata/telegraf"
-	"github.com/influxdata/telegraf/internal/config"
-	"github.com/influxdata/telegraf/internal/models"
+	"github.com/dennisbappert/telegraf"
+	"github.com/dennisbappert/telegraf/internal/config"
+	"github.com/dennisbappert/telegraf/internal/models"
 )
 
 // Agent runs telegraf and collects data based on the given config
@@ -91,9 +91,6 @@ func panicRecover(input *internal_models.RunningInput) {
 		runtime.Stack(trace, true)
 		log.Printf("FATAL: Input [%s] panicked: %s, Stack:\n%s\n",
 			input.Name, err, trace)
-		log.Println("PLEASE REPORT THIS PANIC ON GITHUB with " +
-			"stack trace, configuration, and OS information: " +
-			"https://github.com/influxdata/telegraf/issues/new")
 	}
 }
 

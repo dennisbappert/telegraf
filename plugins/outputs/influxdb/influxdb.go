@@ -9,9 +9,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/influxdata/telegraf"
-	"github.com/influxdata/telegraf/internal"
-	"github.com/influxdata/telegraf/plugins/outputs"
+	"github.com/dennisbappert/telegraf"
+	"github.com/dennisbappert/telegraf/internal"
+	"github.com/dennisbappert/telegraf/plugins/outputs"
 
 	"github.com/influxdata/influxdb/client/v2"
 )

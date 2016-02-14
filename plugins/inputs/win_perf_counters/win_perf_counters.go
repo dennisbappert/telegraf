@@ -8,8 +8,8 @@ import (
 	"strings"
 	"unsafe"
 
-	"github.com/influxdata/telegraf"
-	"github.com/influxdata/telegraf/plugins/inputs"
+	"github.com/dennisbappert/telegraf"
+	"github.com/dennisbappert/telegraf/plugins/inputs"
 	"github.com/lxn/win"
 )
 

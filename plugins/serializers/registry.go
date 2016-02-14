@@ -1,10 +1,9 @@
 package serializers
 
 import (
-	"github.com/influxdata/telegraf"
+	"github.com/dennisbappert/telegraf"
 
-	"github.com/influxdata/telegraf/plugins/serializers/graphite"
-	"github.com/influxdata/telegraf/plugins/serializers/influx"
+	"github.com/dennisbappert/telegraf/plugins/serializers/influx"
 )
 
 // SerializerOutput is an interface for output plugins that are able to
@@ -38,18 +37,10 @@ func NewSerializer(config *Config) (Serializer, error) {
 	switch config.DataFormat {
 	case "influx":
 		serializer, err = NewInfluxSerializer()
-	case "graphite":
-		serializer, err = NewGraphiteSerializer(config.Prefix)
 	}
 	return serializer, err
 }
 
 func NewInfluxSerializer() (Serializer, error) {
 	return &influx.InfluxSerializer{}, nil
-}
-
-func NewGraphiteSerializer(prefix string) (Serializer, error) {
-	return &graphite.GraphiteSerializer{
-		Prefix: prefix,
-	}, nil
 }

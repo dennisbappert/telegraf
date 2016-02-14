@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/influxdata/telegraf"
+	"github.com/dennisbappert/telegraf"
 )
 
 type JSONParser struct {

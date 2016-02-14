@@ -3,11 +3,10 @@ package parsers
 import (
 	"fmt"
 
-	"github.com/influxdata/telegraf"
+	"github.com/dennisbappert/telegraf"
 
-	"github.com/influxdata/telegraf/plugins/parsers/graphite"
-	"github.com/influxdata/telegraf/plugins/parsers/influx"
-	"github.com/influxdata/telegraf/plugins/parsers/json"
+	"github.com/dennisbappert/telegraf/plugins/parsers/influx"
+	"github.com/dennisbappert/telegraf/plugins/parsers/json"
 )
 
 // ParserInput is an interface for input plugins that are able to parse
@@ -65,9 +64,6 @@ func NewParser(config *Config) (Parser, error) {
 			config.TagKeys, config.DefaultTags)
 	case "influx":
 		parser, err = NewInfluxParser()
-	case "graphite":
-		parser, err = NewGraphiteParser(config.Separator,
-			config.Templates, config.DefaultTags)
 	default:
 		err = fmt.Errorf("Invalid data format: %s", config.DataFormat)
 	}
@@ -89,12 +85,4 @@ func NewJSONParser(
 
 func NewInfluxParser() (Parser, error) {
 	return &influx.InfluxParser{}, nil
-}
-
-func NewGraphiteParser(
-	separator string,
-	templates []string,
-	defaultTags map[string]string,
-) (Parser, error) {
-	return graphite.NewGraphiteParser(separator, templates, defaultTags)
 }

@@ -3,8 +3,8 @@ package internal_models
 import (
 	"strings"
 
-	"github.com/influxdata/telegraf"
-	"github.com/influxdata/telegraf/internal"
+	"github.com/dennisbappert/telegraf"
+	"github.com/dennisbappert/telegraf/internal"
 )
 
 // TagFilter is the name of a tag, and the values on which to filter

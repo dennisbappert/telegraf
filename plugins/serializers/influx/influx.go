@@ -1,7 +1,7 @@
 package influx
 
 import (
-	"github.com/influxdata/telegraf"
+	"github.com/dennisbappert/telegraf"
 )
 
 type InfluxSerializer struct {

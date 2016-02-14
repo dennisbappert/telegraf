@@ -4,7 +4,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/influxdata/telegraf"
+	"github.com/dennisbappert/telegraf"
 )
 
 const DEFAULT_POINT_BUFFER_LIMIT = 10000

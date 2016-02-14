@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/influxdata/telegraf"
+	"github.com/dennisbappert/telegraf"
 
 	"github.com/influxdata/influxdb/models"
 )
